@@ -43,7 +43,7 @@
 
 <section class="sec band band-supply" style="padding-bottom:clamp(48px,6vw,80px)">
   <div class="wrap">
-    <p class="kicker"><i class="mk mk-supply" aria-hidden="true"></i>2026 – now, open source</p>
+    <p class="kicker"><i class="mk mk-supply" aria-hidden="true"></i>2026 – now, open source, built with AI assistance</p>
     <div class="project-feature">
       <div>
         <h2 style="font-size:clamp(30px,3.6vw,48px);font-stretch:116%;font-weight:760;letter-spacing:-0.025em;line-height:1.02;margin-bottom:16px">Supply chain digital twin</h2>
@@ -51,6 +51,15 @@
           <p>A model of a tariff-driven factory transfer for an anonymous laptop maker, on synthetic data. Each module answers a planning question I ran into in practice. The Python engines are mirrored in JavaScript, so the report pages recompute live in the browser, and tests keep the two engines in exact agreement.</p>
           <p>Practical rules come from my own planning experience, generalised and anonymised. Freight rates, duties and ramp times come from public sources, cited in the repository.</p>
         </div>
+        <section class="credit" aria-labelledby="h-credit">
+          <h3 id="h-credit">Built with AI assistance</h3>
+          <p>I conceived and designed this project, and I make the decisions on every part of it. Claude, an AI assistant made by Anthropic, helps with the build under my direction.</p>
+          <dl class="credit-split">
+            <div><dt>My part</dt><dd>The overall concept and model design, the question each module answers, the business rules from my planning experience, judging whether every result holds up, reviewing and editing the code, and deciding what goes in.</dd></div>
+            <div><dt>AI assistant (Claude)</dt><dd>Writing and testing code to my specification, collecting public data with its sources, and drafting documentation and report pages for my review.</dd></div>
+          </dl>
+          <p class="credit-note">Every rule and number in the repository is labelled as practitioner input, public source or placeholder, so you can see what came from where.</p>
+        </section>
         <div class="links-row">
           <a class="btn btn-solid" href="https://jinli-kiki.github.io/scm-twin/docs/" style="background:var(--s-acc);border-color:var(--s-acc);color:#1B1204">Open the live report</a>
           <a class="btn" href="https://github.com/JinLI-KIKI/scm-twin">Source on GitHub</a>

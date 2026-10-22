@@ -344,7 +344,7 @@ body.sec-lenovo .bar-cta:hover { color: #0E1A2B; }
 .tl-m b { font-weight: 640; color: var(--ink-2); margin-left: 3px; }
 .tl-body { position: relative; }
 .tl-events { position: absolute; top: -74px; bottom: 0; left: var(--name); right: 0; pointer-events: none; }
-.tl-ev { position: absolute; left: calc(var(--f) * 100%); top: 0; bottom: 0; border-left: 1.5px dashed var(--acc-fill); opacity: .9; }
+.tl-ev { position: absolute; left: calc(var(--f) * 100%); top: 0; bottom: 0; border-left: 1.5px dashed var(--acc-fill); }
 .tl-ev-label { position: absolute; left: 0; z-index: 2; white-space: nowrap; font-size: 12.5px; font-weight: 640; color: var(--acc); line-height: 1; padding: 2px 5px 2px 6px; background: var(--b-bg, var(--paper)); }
 .tl-ev.t1 .tl-ev-label { top: 2px; }
 .tl-ev.t2 .tl-ev-label { top: 18px; }
@@ -646,6 +646,31 @@ a.tl-row:hover .tl-bar { background: var(--acc-fill); opacity: 1; }
   .cv-head { grid-template-columns: 1fr; }
   .cv-head img { order: -1; width: 90px; }
 }
+
+/* AI credit (projects) */
+.credit { margin-top: 28px; padding: 20px 22px 18px; border-radius: 14px; border: 1px solid var(--rule-strong); background: var(--surface); max-width: 46em; }
+.credit h3 { font-size: 17px; font-weight: 720; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+.credit h3::before { content: ""; width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--acc-fill); }
+.credit > p { font-size: 15.5px; color: var(--ink-2); margin-bottom: 14px; }
+.credit-split { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin: 0; }
+.credit-split div { padding-top: 10px; border-top: 1px solid var(--rule-strong); }
+.credit-split dt { font-weight: 700; font-size: 15px; margin-bottom: 4px; }
+.credit-split dd { margin: 0; font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
+.credit .credit-note { font-size: 13.5px; color: var(--ink-3); margin: 14px 0 0; }
+@media (max-width: 600px) { .credit-split { grid-template-columns: 1fr; gap: 12px; } }
+
+/* Lenovo public boundary */
+.boundary { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+.boundary-col { padding-top: 14px; border-top: 3px solid var(--acc-fill); }
+.boundary-out { border-top-color: var(--ink-3); }
+.boundary h3 { font-size: 17px; font-weight: 720; display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.boundary li { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+.mk-out { width: 10px; height: 10px; border: 2px solid var(--ink-3); }
+@media (max-width: 700px) { .boundary { grid-template-columns: 1fr; gap: 24px; } }
+.case-note { padding-top: clamp(40px, 5vw, 64px); }
+.case-note p { margin: 0; max-width: 60em; font-size: 14px; line-height: 1.55; color: var(--ink-2); padding: 14px 18px; border-left: 3px solid var(--acc-fill); background: var(--acc-wash); border-radius: 0 10px 10px 0; }
+.case-note b { color: var(--ink); }
+.case-note + .casenav { padding-top: 20px; }
 
 /* ------------------------------------------------------------------ footer */
 .foot { padding: clamp(48px, 6vw, 80px) 0 28px; }

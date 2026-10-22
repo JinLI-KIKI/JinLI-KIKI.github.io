@@ -352,6 +352,12 @@ def casenav(root, path):
     return ""
 
 
+def lenovo_note(root):
+    return f"""<aside class="wrap case-note" aria-label="About this case">
+  <p><b>About this page.</b> A personal account of my own work, not reviewed or endorsed by Lenovo. Results are the figures on my résumé; charts are schematic and examples use made-up numbers; no internal data, supplier or customer names. <a href="{root}lenovo/#boundary">What these pages share</a>.</p>
+</aside>"""
+
+
 def page(meta, body):
     path = meta["path"]
     root = rel_root(path)
@@ -369,6 +375,8 @@ def page(meta, body):
             return root
         if key == "casenav":
             return casenav(root, path)
+        if key == "lenovo-note":
+            return lenovo_note(root)
         if key == "spectrum":
             return spectrum()
         if key == "spectrum:mini":
