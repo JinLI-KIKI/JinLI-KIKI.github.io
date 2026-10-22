@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tariff pull-in | Jin Li</title>
+<meta name="description" content="How I pulled North American notebook supply forward at Lenovo between the November 2024 election and the February 2025 China tariffs, and the trade-offs behind a pull-in.">
+<meta name="author" content="Jin Li">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://jinli-kiki.github.io/lenovo/tariff-pull-in/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tariff pull-in | Jin Li">
+<meta property="og:description" content="How I pulled North American notebook supply forward at Lenovo between the November 2024 election and the February 2025 China tariffs, and the trade-offs behind a pull-in.">
+<meta property="og:url" content="https://jinli-kiki.github.io/lenovo/tariff-pull-in/">
+<meta property="og:image" content="https://jinli-kiki.github.io/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="sec-lenovo page-lenovo-tariff-pull-in">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar" id="bar">
+  <div class="bar-inner">
+    <a class="bar-name" href="../../">Jin Li</a>
+    <nav class="bar-nav" aria-label="Main"><a href="../../lenovo/" aria-current="page">Lenovo</a><a href="../../research/">Research</a><a href="../../projects/">Projects</a><a href="../../publications/">Publications</a><a href="../../cv/">Résumé</a></nav>
+    <a class="bar-cta" href="mailto:lijin201107@outlook.com">Email me</a>
+    <details class="menu">
+      <summary aria-label="Open menu"><span></span><span></span></summary>
+      <nav class="menu-panel" aria-label="All pages"><a class="menu-home" href="../../">Home</a><div><p>Lenovo</p><a href="../../lenovo/">Overview</a><a href="../../lenovo/planning-role/">North America master planning</a><a href="../../lenovo/excess-inventory/">Excess inventory clean-up</a><a href="../../lenovo/tariff-pull-in/">Tariff pull-in</a><a href="../../lenovo/vietnam-transition/">China to Vietnam motherboards</a><a href="../../lenovo/commit-automation/">Parts-to-box commit tool</a></div><div><p>Research</p><a href="../../research/">Overview</a><a href="../../research/reactive-species/">Reactive species</a><a href="../../research/taste-and-odour/">Taste and odour in cold water</a><a href="../../research/real-water/">Real water at the dosing point</a><a href="../../research/dalhousie/">Partner projects in Canada</a></div><div><p>More</p><a href="../../projects/">Projects</a><a href="../../publications/">Publications</a><a href="../../experience/">Earlier experience</a><a href="../../cv/">Résumé</a></div><a class="menu-mail" href="mailto:lijin201107@outlook.com">lijin201107@outlook.com</a></nav>
+    </details>
+  </div>
+</header>
+<main id="main">
+<section class="phero band band-supply">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><a href="../../lenovo/">Lenovo</a><span aria-current="page">Tariff pull-in</span></nav>
+    <p class="kicker"><i class="mk mk-supply" aria-hidden="true"></i>Lenovo case</p>
+    <h1>Tariff pull-in for North America</h1>
+    <p class="phero-lede">After the November 2024 election it was clear tariffs on China-made goods were coming, and most of our North American notebooks were built in China. I pulled supply forward so the stock was in the US before the duty started.</p>
+    <dl class="meta">
+      <div><dt>When</dt><dd>Dec 2024 – Feb 2025</dd></div>
+      <div><dt>Market</dt><dd>North America</dd></div>
+      <div><dt>Moves</dt><dd>Supply pull-in, finished-goods build, regional rebalancing, extra line capacity</dd></div>
+      <div><dt>Duty it got ahead of</dt><dd class="big">+10%, +20%<small>from 4 Feb and 4 Mar 2025</small></dd></div>
+    </dl>
+    <figure class="tl tl-year" aria-label="Timeline of my year at Lenovo against the 2025 US tariff steps">
+  <div class="tl-plot">
+    <div class="tl-head"><span class="tl-name"></span><span class="tl-track tl-axis"><span class="tl-m tl-m-year" style="--f:0.0000">Sep <b>2024</b></span><span class="tl-m" style="--f:0.0822">Oct</span><span class="tl-m" style="--f:0.1671">Nov</span><span class="tl-m" style="--f:0.2493">Dec</span><span class="tl-m tl-m-year" style="--f:0.3342">Jan <b>2025</b></span><span class="tl-m" style="--f:0.4192">Feb</span><span class="tl-m" style="--f:0.4959">Mar</span><span class="tl-m" style="--f:0.5808">Apr</span><span class="tl-m" style="--f:0.6630">May</span><span class="tl-m" style="--f:0.7479">Jun</span><span class="tl-m" style="--f:0.8301">Jul</span><span class="tl-m" style="--f:0.9151">Aug</span></span></div>
+    <div class="tl-body">
+      <div class="tl-events" aria-hidden="true"><span class="tl-ev t1" style="--f:0.1781" title="Election, 5 Nov 2024"><span class="tl-ev-label">Election</span></span><span class="tl-ev t2" style="--f:0.3863" title="Inauguration, 20 Jan 2025"><span class="tl-ev-label">Inauguration</span></span><span class="tl-ev t3" style="--f:0.4274" title="+10%, 4 Feb 2025"><span class="tl-ev-label">+10%</span></span><span class="tl-ev t1" style="--f:0.5041" title="+20%, 4 Mar 2025"><span class="tl-ev-label">+20%</span></span><span class="tl-ev t2" style="--f:0.6082" title="PCs exempted, 11 Apr 2025"><span class="tl-ev-label">PCs exempted</span></span><span class="tl-ev t3" style="--f:0.6932" title="Geneva truce, 12 May 2025"><span class="tl-ev-label">Geneva truce</span></span></div>
+      <a class="tl-row is-dim" href="../../lenovo/planning-role/"><span class="tl-name">North America master planning<span class="tl-when">Sep 2024 – Aug 2025</span></span><span class="tl-track"><span class="tl-bar" style="--a:0.0000;--b:1.0000"></span></span></a><a class="tl-row is-dim" href="../../lenovo/excess-inventory/"><span class="tl-name">Excess inventory clean-up<span class="tl-when">Sep 2024 – Aug 2025</span></span><span class="tl-track"><span class="tl-bar" style="--a:0.0000;--b:1.0000"></span></span></a><a class="tl-row is-current" href="../../lenovo/tariff-pull-in/" aria-current="page"><span class="tl-name">Tariff pull-in<span class="tl-when">Dec 2024 – Feb 2025</span></span><span class="tl-track"><span class="tl-bar" style="--a:0.2493;--b:0.4959"></span></span></a><a class="tl-row is-dim" href="../../lenovo/vietnam-transition/"><span class="tl-name">China to Vietnam motherboards<span class="tl-when">Jan 2025 – Jul 2025</span></span><span class="tl-track"><span class="tl-bar" style="--a:0.3342;--b:0.9151"></span></span></a><a class="tl-row is-dim" href="../../lenovo/commit-automation/"><span class="tl-name">Parts-to-box commit tool<span class="tl-when">Feb 2025 – May 2025</span></span><span class="tl-track"><span class="tl-bar" style="--a:0.4192;--b:0.7479"></span></span></a>
+      <div class="tl-row tl-steprow"><span class="tl-name">Extra US duty on China-made laptops<span class="tl-when">on top of normal duty</span></span><span class="tl-track"><svg viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="tl-step-area" d="M0,98.0 H427.4 V59.6 H504.1 V21.2 H1000 V100 H0 Z"/><path class="tl-step" d="M0,98.0 H427.4 V59.6 H504.1 V21.2 H1000"/></svg><span class="tl-lvl" style="--y:21.2">20%</span></span></div>
+    </div>
+  </div>
+  <figcaption>My year at Lenovo against the US tariff steps on China-made goods. Election and inauguration: November 2024 and 20 January 2025. An extra 10% applied from 4 February 2025 and 20% from 4 March. On 11 April computers were exempted from the new reciprocal tariffs, but the 20% stayed. The Geneva truce on 12 May cut the reciprocal rate on other Chinese goods.</figcaption>
+</figure>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>The timing</h2>
+    <div class="sec-body">
+      <figure class="tl tl-tariff" aria-label="Extra US duty on China-made laptops, October 2024 to June 2025, with the pull-in window">
+  <div class="tl-plot">
+    <div class="tl-head"><span class="tl-track tl-axis"><span class="tl-m tl-m-year" style="--f:0.0000">Oct <b>2024</b></span><span class="tl-m" style="--f:0.1136">Nov</span><span class="tl-m" style="--f:0.2234">Dec</span><span class="tl-m tl-m-year" style="--f:0.3370">Jan <b>2025</b></span><span class="tl-m" style="--f:0.4505">Feb</span><span class="tl-m" style="--f:0.5531">Mar</span><span class="tl-m" style="--f:0.6667">Apr</span><span class="tl-m" style="--f:0.7766">May</span><span class="tl-m" style="--f:0.8901">Jun</span></span></div>
+    <div class="tl-body">
+      <div class="tl-events" aria-hidden="true"><span class="tl-ev t1" style="--f:0.1282" title="Election, 5 Nov 2024"><span class="tl-ev-label">Election</span></span><span class="tl-ev t2 tl-ev-minor" style="--f:0.2015" title="+10% pledged, 25 Nov 2024"><span class="tl-ev-label">+10% pledged</span></span><span class="tl-ev t1 tl-ev-minor" style="--f:0.4066" title="Inauguration, 20 Jan 2025"><span class="tl-ev-label">Inauguration</span></span><span class="tl-ev t2" style="--f:0.4615" title="+10% in force, 4 Feb 2025"><span class="tl-ev-label">+10% in force</span></span><span class="tl-ev t3" style="--f:0.5641" title="+20%, 4 Mar 2025"><span class="tl-ev-label">+20%</span></span><span class="tl-ev t1" style="--f:0.7033" title="PCs exempted, 11 Apr 2025"><span class="tl-ev-label">PCs exempted</span></span><span class="tl-ev t2 tl-ev-r tl-ev-minor" style="--f:0.8168" title="Geneva truce, 12 May 2025"><span class="tl-ev-label">Geneva truce</span></span></div>
+      <div class="tl-chart">
+        <span class="tl-window" style="--a:0.2234;--b:0.5531"><span>Pull-in window</span></span>
+        <span class="tl-grid" style="--y:98.0"><span>0%</span></span><span class="tl-grid" style="--y:66.0"><span>10%</span></span><span class="tl-grid" style="--y:34.0"><span>20%</span></span>
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path class="tl-step-area" d="M0,98.0 H461.5 V66.0 H564.1 V34.0 H1000 V100 H0 Z"/><path class="tl-step" d="M0,98.0 H461.5 V66.0 H564.1 V34.0 H1000"/></svg>
+      </div>
+    </div>
+  </div>
+  <figcaption>The extra US duty on China-made laptops (line) and the window in which I pulled North American supply forward (shaded). The duty went from 0 to 10% on 4 February 2025 and to 20% on 4 March. Reciprocal tariffs on other Chinese goods rose to 125% in April, but computers were exempted from them on 11 April, so laptops stayed at 20%. The Geneva truce on 12 May cut the reciprocal rate on other goods to 10%.</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>The situation</h2>
+    <div class="sec-body prose">
+      <p>On 25 November 2024 the president-elect said he would add 10% to tariffs on Chinese goods on his first day. Nothing was in force yet, and nobody knew the rate, the date or which products would be hit. What was certain was that a notebook built in China and shipped after the duty started would cost more to land in the US than the same notebook shipped before it.</p>
+      <p>The extra duty came in on 4 February 2025 and doubled to 20% on 4 March. In April, computers were exempted from the much larger reciprocal tariffs, but the 20% stayed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>What I did</h2>
+    <div class="sec-body">
+      <ol class="steps">
+        <li><div><h3>Read the risk early</h3><p>Between the election and the inauguration, I treated the tariff as likely rather than waiting for the details, and prepared contingency plans.</p></div></li>
+        <li><div><h3>Pulled future supply forward</h3><p>Moved planned North American builds earlier in the plan, so they could ship before the duty started.</p></div></li>
+        <li><div><h3>Built finished-goods stock for North America</h3><p>Prepared finished-goods inventory ahead of the tariff dates to protect availability and cost.</p></div></li>
+        <li><div><h3>Rebalanced other regions</h3><p>Adjusted other regions' supply so they could help cover what North America took early.</p></div></li>
+        <li><div><h3>Asked the factories for more line capacity</h3><p>Worked with the factories to expand lines, giving room to absorb the pull-in and whatever the policy did next.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>The trade-off</h2>
+    <div class="sec-body">
+      <p class="prose" style="margin-bottom:22px">A pull-in is a bet on timing. Both directions cost money.</p>
+      <div class="tbl-wrap">
+        <table class="tbl">
+          <thead><tr><th scope="col"></th><th scope="col">Move early</th><th scope="col">Wait</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Cost</th><td data-l="Move early">Carrying more stock for longer, and warehouse space</td><td data-l="Wait">Extra duty on every unit that lands after the start date</td></tr>
+            <tr><th scope="row">Risk</th><td data-l="Move early">Demand or the product mix changes while the stock waits</td><td data-l="Wait">Capacity and freight run short when everyone moves at once</td></tr>
+            <tr><th scope="row">Who pays</th><td data-l="Move early">Other regions, whose supply gets squeezed to fund the pull-in</td><td data-l="Wait">North American customers or margin, through higher landed cost</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>What it taught me</h2>
+    <div class="sec-body">
+      <div class="lessons">
+        <div class="lesson"><h3>Act on the signal, not the rule</h3><p>By the time the tariff was published, the factories and freight were already busy. The useful window was the uncertain one.</p></div>
+        <div class="lesson"><h3>Capacity is the real constraint</h3><p>Pulling forward is easy to plan and hard to build. It only worked because the factories could add line capacity.</p></div>
+        <div class="lesson"><h3>A pull-in buys time, not a fix</h3><p>Stock shipped early covers a few months. Avoiding the duty for good meant changing where the product was made, which became the <a href="../../lenovo/vietnam-transition/">Vietnam transition</a>.</p></div>
+        <div class="lesson"><h3>One region's win costs another</h3><p>Supply is global. Every unit pulled into North America early was a unit another region had to plan around.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>Skills</h2>
+    <div class="sec-body">
+      <ul class="tags"><li>Scenario planning</li><li>Trade policy risk</li><li>Supply pull-in</li><li>Finished-goods planning</li><li>Global allocation</li><li>Capacity planning</li></ul>
+    </div>
+  </div>
+</section>
+
+<nav class="casenav wrap" aria-label="More cases"><a class="cn-prev" href="../../lenovo/excess-inventory/"><span>Previous</span>Excess inventory clean-up</a><a class="cn-next" href="../../lenovo/vietnam-transition/"><span>Next</span>China to Vietnam motherboards</a></nav>
+</main>
+<footer class="foot band band-supply" id="contact">
+  <div class="wrap foot-grid">
+    <div class="foot-contact">
+      <h2>Get in touch</h2>
+      <p>Email is the fastest way to reach me.</p>
+      <a class="foot-email" href="mailto:lijin201107@outlook.com">lijin201107@outlook.com</a>
+      <p class="foot-small">Tokyo, Japan (JST, UTC+9). Code on <a href="https://github.com/JinLI-KIKI" rel="me">GitHub</a>.</p>
+    </div>
+    <nav class="foot-map" aria-label="Site map"><div><h3>Lenovo</h3><ul><li><a href="../../lenovo/">Overview</a></li><li><a href="../../lenovo/planning-role/">North America master planning</a></li><li><a href="../../lenovo/excess-inventory/">Excess inventory clean-up</a></li><li><a href="../../lenovo/tariff-pull-in/">Tariff pull-in</a></li><li><a href="../../lenovo/vietnam-transition/">China to Vietnam motherboards</a></li><li><a href="../../lenovo/commit-automation/">Parts-to-box commit tool</a></li></ul></div><div><h3>Research</h3><ul><li><a href="../../research/">Overview</a></li><li><a href="../../research/reactive-species/">Reactive species</a></li><li><a href="../../research/taste-and-odour/">Taste and odour in cold water</a></li><li><a href="../../research/real-water/">Real water at the dosing point</a></li><li><a href="../../research/dalhousie/">Partner projects in Canada</a></li></ul></div><div><h3>More</h3><ul><li><a href="../../projects/">Projects</a></li><li><a href="../../publications/">Publications</a></li><li><a href="../../experience/">Earlier experience</a></li><li><a href="../../cv/">Résumé</a></li></ul></div></nav>
+  </div>
+  <div class="wrap foot-base"><p>© 2026 Jin Li. Updated October 2026.</p><p>Set in Archivo. Hosted on GitHub Pages.</p></div>
+</footer>
+<script src="../../assets/js/main.js" defer></script>
+</body>
+</html>

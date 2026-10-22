@@ -1,0 +1,100 @@
+<!--
+path: lenovo/commit-automation/
+title: Parts-to-box commit tool
+description: The Python tool I wrote at Lenovo to turn part-level supplier commits into finished-notebook commits, with cross-factory material matching. Planning output efficiency rose 65%.
+section: lenovo
+-->
+<section class="phero band band-supply">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{root}}">Home</a><a href="{{root}}lenovo/">Lenovo</a><span aria-current="page">Commit tool</span></nav>
+    <p class="kicker"><i class="mk mk-supply" aria-hidden="true"></i>Lenovo case</p>
+    <h1>Parts-to-box commit tool</h1>
+    <p class="phero-lede">Suppliers and factories commit parts. The business needs to know how many finished notebooks it will get, and when. I wrote the Python tool that does the translation.</p>
+    <dl class="meta">
+      <div><dt>When</dt><dd>Feb – May 2025</dd></div>
+      <div><dt>Built with</dt><dd>Python</dd></div>
+      <div><dt>Used by</dt><dd>The North American planning team</dd></div>
+      <div><dt>Planning output efficiency</dt><dd class="big">+65%<small>with real-time supply visibility</small></dd></div>
+    </dl>
+    {{timeline:year:commit-automation}}
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>The problem</h2>
+    <div class="sec-body prose">
+      <p>Commits arrive part by part: so many boards, panels, keyboards and batteries, by week and by factory. A notebook, the "box", ships only when every part it needs is there. Turning hundreds of part commits into box commits meant matching part numbers to products, checking which factory had which material, and finding the part that held each product back.</p>
+      <p>Done by hand, this took a large share of every planning week. It also missed a quieter problem: material sitting at one factory that an order needed at another, or built with the wrong origin for where the order was going. Those mismatches showed up later as delivery delays.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>How it works</h2>
+    <div class="sec-body">
+      <ol class="pipe">
+        <li><span class="pipe-k">Input</span><h3>Part commits</h3><p>Supplier and factory commits by part number, site and week.</p></li>
+        <li><span class="pipe-k">Step 1</span><h3>Explode the BOM</h3><p>Map each box to the parts it needs.</p></li>
+        <li><span class="pipe-k">Step 2</span><h3>Find the constraint</h3><p>For each box, site and week, the scarcest part sets how many can be built.</p></li>
+        <li><span class="pipe-k">Step 3</span><h3>Match across factories</h3><p>Point material at the site and order that can use it, respecting origin.</p></li>
+        <li class="pipe-out"><span class="pipe-k">Output</span><h3>Box commits</h3><p>Finished-unit commits the team could use and share directly.</p></li>
+      </ol>
+      <div class="example">
+        <h3 style="font-size:18px;margin-bottom:6px">A worked example</h3>
+        <p class="note" style="margin-bottom:14px">Illustrative numbers, not real data. One notebook configuration, one factory, one week.</p>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th scope="col">Part</th><th scope="col" class="num">Committed this week</th><th scope="col" class="num">Needed per box</th><th scope="col" class="num">Boxes it can cover</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Motherboard</th><td class="num" data-l="Committed">1,200</td><td class="num" data-l="Per box">1</td><td class="num" data-l="Covers">1,200</td></tr>
+              <tr class="is-min"><th scope="row">Display panel</th><td class="num" data-l="Committed">900</td><td class="num" data-l="Per box">1</td><td class="num" data-l="Covers">900</td></tr>
+              <tr><th scope="row">Keyboard, US layout</th><td class="num" data-l="Committed">1,500</td><td class="num" data-l="Per box">1</td><td class="num" data-l="Covers">1,500</td></tr>
+              <tr><th scope="row">Battery</th><td class="num" data-l="Committed">1,100</td><td class="num" data-l="Per box">1</td><td class="num" data-l="Covers">1,100</td></tr>
+            </tbody>
+            <tfoot><tr><th scope="row">Box commit</th><td class="num"></td><td class="num"></td><td class="num" data-l="Box commit">900, held by the panel</td></tr></tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>The result</h2>
+    <div class="sec-body">
+      <div class="results">
+        <div><b>+65%</b><span>planning output efficiency for the team</span></div>
+        <div><b>Real time</b><span>supply visibility, instead of a weekly manual roll-up</span></div>
+        <div><b>Fewer delays</b><span>caused by material at the wrong factory or with the wrong origin</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>What it taught me</h2>
+    <div class="sec-body">
+      <div class="lessons">
+        <div class="lesson"><h3>Automate the weekly pain</h3><p>The tool paid off because it replaced work the whole team repeated every week, not because the logic was complicated.</p></div>
+        <div class="lesson"><h3>The constraint is the answer</h3><p>Planners don't need every number. They need to know which part is holding each product back, so that is what the output led with.</p></div>
+        <div class="lesson"><h3>Origin is data</h3><p>Once tariffs depended on where a board was made, origin had to be a field in the matching logic, not something people remembered.</p></div>
+        <div class="lesson"><h3>Build for the people using it</h3><p>Output had to look like what planners already shared, or it wouldn't be used.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>Skills</h2>
+    <div class="sec-body">
+      <ul class="tags"><li>Python</li><li>Data automation</li><li>BOM logic</li><li>Supply commits</li><li>Material matching</li><li>Process improvement</li></ul>
+    </div>
+  </div>
+</section>
+
+{{casenav}}

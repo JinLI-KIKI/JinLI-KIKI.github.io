@@ -1,0 +1,75 @@
+<!--
+path: lenovo/
+title: Lenovo
+description: A year as Master Planning Specialist for North America IBP in Lenovo's global PC supply chain, Sep 2024 to Aug 2025: excess inventory, the 2025 tariff pull-in, the China to Vietnam motherboard move and a planning automation tool.
+section: lenovo
+-->
+<section class="phero band band-supply">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{root}}">Home</a><span aria-current="page">Lenovo</span></nav>
+    <p class="kicker"><i class="mk mk-supply" aria-hidden="true"></i>Global Supply Chain, PC</p>
+    <h1>A year at Lenovo</h1>
+    <p class="phero-lede">Master Planning Specialist for North America integrated business planning (IBP), September 2024 to August 2025, in Hefei and Shanghai. I owned end-to-end supply planning for North American notebooks in the year US tariffs on China-made goods arrived.</p>
+    <dl class="meta">
+      <div><dt>Portfolio</dt><dd>Commercial, education and public-sector, and SMB notebooks</dd></div>
+      <div><dt>Worked with</dt><dd>Sales, R&amp;D, procurement, manufacturing and ODM partners</dd></div>
+      <div><dt>Working capital released</dt><dd class="big">$7M<small>excess inventory cut from $12M to $5M</small></dd></div>
+      <div><dt>Planning output</dt><dd class="big">+65%<small>with a Python commit tool I wrote</small></dd></div>
+    </dl>
+    {{timeline:year}}
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>The year</h2>
+    <div class="sec-body prose">
+      <p>I joined Lenovo's global PC supply chain straight after my master's, as the planner responsible for North American notebooks. The day job was the monthly planning cycle: take demand, run supply planning against material and factory capacity, commit what could be built and sort out the gaps with the teams around me.</p>
+      <p>Three months in, the US election changed the year. Tariffs on China-made goods were signalled in November 2024 and arrived in February and March 2025, and most North American notebooks were built in China. Much of what I did after that was about getting ahead of them: shipping stock before the duty started, and moving motherboard supply to Vietnam so the products stopped counting as China-made.</p>
+      <p>Alongside that, I inherited an education notebook line with $12M of material that no longer had demand behind it, and I wrote the Python tool our team used to turn part-level commits into finished-unit commits. Each of these has its own page below.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>Five cases</h2>
+    <div class="sec-body">
+      <ul class="cases" style="margin-top:0">
+        <li><a class="case-link" href="{{root}}lenovo/planning-role/"><h3>North America master planning</h3><p>The monthly IBP cycle, MRP, the teams around the plan and my work as an SAP IBP key user.</p><span class="case-fig">Sep 2024 – Aug 2025<small>the role</small></span></a></li>
+        <li><a class="case-link" href="{{root}}lenovo/excess-inventory/"><h3>Excess inventory clean-up</h3><p>Five levers that cleared $7M of material with no demand on an education Windows notebook line, and where each one stops working.</p><span class="case-fig">$12M to $5M<small>in six months</small></span></a></li>
+        <li><a class="case-link" href="{{root}}lenovo/tariff-pull-in/"><h3>Tariff pull-in</h3><p>Reading the tariff risk after the election and pulling North American supply forward before the duty started.</p><span class="case-fig">Dec 2024 – Feb 2025<small>pull-in window</small></span></a></li>
+        <li><a class="case-link" href="{{root}}lenovo/vietnam-transition/"><h3>China to Vietnam motherboards</h3><p>Why the move had to start at the board, and how two sources ran in parallel while the new line ramped.</p><span class="case-fig">Jan – Jul 2025<small>dual source</small></span></a></li>
+        <li><a class="case-link" href="{{root}}lenovo/commit-automation/"><h3>Parts-to-box commit tool</h3><p>How the tool turned part commits into box commits, with a worked example.</p><span class="case-fig">+65%<small>planning output</small></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>Field notes</h2>
+    <div class="sec-body">
+      <p class="prose" style="margin-bottom:22px">The terms these pages use, as I worked with them. Notebook supply chains have their own vocabulary, and most of the interesting decisions sit inside it.</p>
+      <dl class="gloss">
+        <div><dt>IBP</dt><dd>Integrated business planning. The monthly cycle that lines demand, supply and finance up on one plan, so sales, operations and finance work from the same numbers.</dd></div>
+        <div><dt>Commit</dt><dd>What a factory or supplier promises to deliver, by week. Parts are committed part by part; the business needs commits for finished units, called boxes.</dd></div>
+        <div><dt>MWD</dt><dd>Material without demand. Parts bought or committed for plans that were later cut. Once a plan is cancelled inside the supplier's liability window, the brand owns that material, whether or not it was actually bought yet.</dd></div>
+        <div><dt>Region-specific parts</dt><dd>Keyboards in a local layout, power cords, packaging and labels. They can only be used in their own region, so they are the first parts to strand when a region's plan changes.</dd></div>
+        <div><dt>Origin follows the board</dt><dd>For US customs, a notebook's country of origin generally follows where its motherboard is made. Final assembly elsewhere does not change it.</dd></div>
+        <div><dt>Board build</dt><dd>Mounting components onto motherboards. It turns loose, reusable parts into a board tied to one model, which is why the timing of board builds matters so much when demand is uncertain.</dd></div>
+        <div><dt>ODM</dt><dd>Original design manufacturer. The partner factory that builds the notebooks. Its capacity follows the volume you load: under-load it and the capacity goes to someone else.</dd></div>
+        <div><dt>PCR</dt><dd>Product change request. The formal way to change a product, for example to extend its end-of-life date or change its bill of materials.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>Where it went next</h2>
+    <div class="sec-body prose">
+      <p>I left Lenovo in August 2025 to start my PhD in Tokyo, but I kept working on the problems from that year. My <a href="{{root}}projects/">supply chain digital twin</a> is an open model of a tariff-driven factory transfer for an anonymous laptop maker, built on synthetic data: stranded material, cutover timing, the longer chain, new-site ramp and factory footprint.</p>
+    </div>
+  </div>
+</section>

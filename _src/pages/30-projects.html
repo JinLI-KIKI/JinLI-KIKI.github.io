@@ -1,0 +1,62 @@
+<!--
+path: projects/
+title: Projects
+description: Side projects by Jin Li: an open supply chain digital twin of a tariff-driven factory transfer, a QR-code usage logger for UV-LED lab equipment, and a literature-mapping pipeline for UV-AOP research.
+section: projects
+-->
+<section class="phero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{root}}">Home</a><span aria-current="page">Projects</span></nav>
+    <h1>Projects</h1>
+    <p class="phero-lede">Things I've built outside the day job: one long-running model of the supply chain problems from my Lenovo year, and two tools that came out of the lab.</p>
+  </div>
+</section>
+
+<section class="sec band band-supply" style="padding-bottom:clamp(48px,6vw,80px)">
+  <div class="wrap">
+    <p class="kicker"><i class="mk mk-supply" aria-hidden="true"></i>2026 – now, open source</p>
+    <div class="project-feature">
+      <div>
+        <h2 style="font-size:clamp(30px,3.6vw,48px);font-stretch:116%;font-weight:760;letter-spacing:-0.025em;line-height:1.02;margin-bottom:16px">Supply chain digital twin</h2>
+        <div class="prose">
+          <p>A model of a tariff-driven factory transfer for an anonymous laptop maker, on synthetic data. Each module answers a planning question I ran into in practice. The Python engines are mirrored in JavaScript, so the report pages recompute live in the browser, and tests keep the two engines in exact agreement.</p>
+          <p>Practical rules come from my own planning experience, generalised and anonymised. Freight rates, duties and ramp times come from public sources, cited in the repository.</p>
+        </div>
+        <div class="links-row">
+          <a class="btn btn-solid" href="https://jinli-kiki.github.io/scm-twin/docs/" style="background:var(--s-acc);border-color:var(--s-acc);color:#1B1204">Open the live report</a>
+          <a class="btn" href="https://github.com/JinLI-KIKI/scm-twin">Source on GitHub</a>
+        </div>
+      </div>
+      <ul class="modules">
+        <li><b>Stranded material</b>Routes material freed by cancelled plans to reuse, conversion or write-off, and prices holding and ageing.</li>
+        <li><b>Transfer cutover</b>Finds the week to stop building in the old factory, balancing tariff still paid against stranded material.</li>
+        <li><b>Business case</b>Monte Carlo of tariff saved against the recurring cost of a longer supply chain.</li>
+        <li><b>Finished goods</b>End-of-life stock around a successor launch: price protection, volume locks and disposition.</li>
+        <li><b>Demand and KPIs</b>Where a business unit's own targets and the company's total cost pick different answers.</li>
+        <li><b>New-site ramp</b>S-curve ramp risk at a new factory, and how far ahead to build boards.</li>
+        <li><b>Factory footprint</b>China and five candidate sites against nine regional distribution centres, with 2026 freight and duties.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>UV-LED usage logger</h2>
+    <div class="sec-body prose">
+      <p class="when" style="margin-bottom:10px">2026, Oguma Lab</p>
+      <p>My supervisor wanted to know who used each UV-LED setup, for how long, and when its settings changed, because irradiance data was hard to trust without that record. I built a small web app opened from QR codes at each setup. Lab members log a session with a start and stop button, or log a calibration change: distance, measured irradiance, meter and wavelength. Records go to a shared Google Sheet through Google Apps Script.</p>
+      <p>It's now how the lab keeps track of its UV-LED equipment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>UV-AOP literature map</h2>
+    <div class="sec-body prose">
+      <p class="when" style="margin-bottom:10px">2026, in progress</p>
+      <p>A Python pipeline over Scopus records that sorts papers on UV advanced oxidation by light source (UV-LED, mercury lamp, excimer), filters them by research facets such as real water or radical quantification, and plots publication trends and the gaps. It checks its own tagging against a blind-scored sample. It supports the literature review in my thesis and a planned review article.</p>
+    </div>
+  </div>
+</section>

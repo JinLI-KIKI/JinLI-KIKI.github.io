@@ -1,0 +1,101 @@
+<!--
+path: research/reactive-species/
+title: Reactive species in UV-LED advanced oxidation
+description: How much radical exposure 280 nm UV-LED/H2O2 and UV-LED/chlorine produce, measured with a pCBA probe, and how pH, temperature, carbonate, humic acid and bromide change it.
+section: research
+-->
+<section class="phero band band-research glow">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{root}}">Home</a><a href="{{root}}research/">Research</a><span aria-current="page">Reactive species</span></nav>
+    <p class="kicker"><i class="mk mk-water" aria-hidden="true"></i>PhD research, University of Tokyo</p>
+    <h1 class="long">Reactive species in UV-LED oxidation</h1>
+    <p class="phero-lede">How many radicals do 280&nbsp;nm UV-LEDs make from hydrogen peroxide and from chlorine, and what in real water takes them away?</p>
+    <dl class="meta">
+      <div><dt>When</dt><dd>2025 – now</dd></div>
+      <div><dt>Systems</dt><dd>UV-LED/H<sub>2</sub>O<sub>2</sub> and UV-LED/chlorine at 280&nbsp;nm</dd></div>
+      <div><dt>Methods</dt><dd>pCBA probe, R<sub>ct</sub>, Monte Carlo and Sobol sensitivity analysis</dd></div>
+      <div><dt>Status</dt><dd class="big">Under review<small>manuscript, first author, 2026</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>The chemistry</h2>
+    <div class="sec-body">
+      <figure class="mech panel" data-mode="h2o2">
+        <div class="mech-tabs" role="tablist" aria-label="Choose an oxidant">
+          <button type="button" role="tab" id="tab-h2o2" aria-controls="mech-panel" aria-selected="true" data-mode="h2o2">UV-LED / H<sub>2</sub>O<sub>2</sub></button>
+          <button type="button" role="tab" id="tab-cl" aria-controls="mech-panel" aria-selected="false" data-mode="cl">UV-LED / chlorine</button>
+        </div>
+        <div id="mech-panel" role="tabpanel" aria-live="polite">
+          <ol class="mech-flow">
+            <li><span class="mech-step">Light</span><strong>280 nm photons</strong><span>From a UV-LED array. Dose is tracked as fluence in mJ/cm².</span></li>
+            <li><span class="mech-step">Oxidant</span><strong class="m-h2o2">Hydrogen peroxide</strong><strong class="m-cl">Free chlorine, HOCl and OCl<sup>−</sup></strong><span class="m-h2o2">Absorbs weakly at 280 nm, so dose and water clarity matter.</span><span class="m-cl">Absorbs far more strongly at 280 nm than H<sub>2</sub>O<sub>2</sub>; the HOCl/OCl<sup>−</sup> balance shifts with pH.</span></li>
+            <li><span class="mech-step">Radicals</span><strong class="m-h2o2">•OH</strong><strong class="m-cl">•OH, Cl•, Cl<sub>2</sub>•<sup>−</sup>, ClO•</strong><span class="m-h2o2">One non-selective oxidant, measured with a pCBA probe.</span><span class="m-cl">A mixed pool of hydroxyl and reactive chlorine species, each with its own selectivity.</span></li>
+            <li><span class="mech-step">Targets and competitors</span><strong>Contaminants and NOM</strong><span>Carbonate, natural organic matter and bromide compete for the same radicals.</span></li>
+          </ol>
+          <p class="mech-eq m-h2o2">H<sub>2</sub>O<sub>2</sub> + hν → 2 •OH</p>
+          <p class="mech-eq m-cl">HOCl + hν → •OH + Cl•&emsp;OCl<sup>−</sup> + hν → O•<sup>−</sup> + Cl•&emsp;Cl• + Cl<sup>−</sup> → Cl<sub>2</sub>•<sup>−</sup></p>
+        </div>
+      </figure>
+      <p class="note" style="margin-top:12px">Switch between the two oxidants. The chlorine system needs more careful accounting of which radical does the work.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>The question</h2>
+    <div class="sec-body prose">
+      <p>Plant operators choose an oxidant and a dose. What they actually buy is radical exposure: how much •OH (and, with chlorine, reactive chlorine species) the water sees per unit of UV dose. That number depends on the oxidant, the pH, the temperature and everything else dissolved in the water.</p>
+      <p>Most of what we know comes from mercury lamps at 254&nbsp;nm. I measured it for 280&nbsp;nm UV-LEDs, for both oxidants, across the conditions a drinking-water plant actually sees.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>How I measured it</h2>
+    <div class="sec-body">
+      <ol class="steps">
+        <li><div><h3>Design the test matrix</h3><p>Oxidant dose, pH 5 to 9, temperature 4 to 20&nbsp;°C, and matrix constituents: bicarbonate, humic acid and bromide.</p></div></li>
+        <li><div><h3>Probe the radicals</h3><p>Added para-chlorobenzoic acid (pCBA), a probe compound that reacts quickly with •OH, and tracked its decay to quantify hydroxyl-radical exposure and R<sub>ct</sub>, the exposure per unit of UV dose.</p></div></li>
+        <li><div><h3>Model the matrix</h3><p>Built a Monte Carlo and Sobol sensitivity workflow to rank which constituents control radical exposure when they vary together, as they do in real water.</p></div></li>
+        <li><div><h3>Check against real water</h3><p>Tested whether the lab results predict treatment of coagulated water from a full-scale plant, continued in the <a href="{{root}}research/real-water/">real-water project</a>.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>Early results</h2>
+    <div class="sec-body">
+      <div class="results">
+        <div><b>Dose</b><span>Oxidant dose was the main driver of performance in UV-LED/H<sub>2</sub>O<sub>2</sub>.</span></div>
+        <div><b>~36%</b><span>slower with 5&nbsp;mg/L humic acid; R<sub>ct</sub> fell steadily from 1 to 5&nbsp;mg/L.</span></div>
+        <div><b>&gt;30%</b><span>slower with 0.1&nbsp;mM bromide, which also raises a brominated by-product concern.</span></div>
+      </div>
+      <div class="prose" style="margin-top:24px">
+        <ul>
+          <li>pH had a moderate effect (pH&nbsp;5 &gt; 7 &gt; 9). Moving from 4 to 20&nbsp;°C changed comparatively little.</li>
+          <li>Bicarbonate caused less than 6% inhibition over the range tested.</li>
+          <li>Compared with the closest earlier study at 265&nbsp;nm, this work uses 280&nbsp;nm, a wider range of oxidant doses and real coagulated water.</li>
+        </ul>
+        <p class="note">From work under review. Final values may change in the published paper.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <h2>Why it matters</h2>
+    <div class="sec-body prose">
+      <p>If a plant knows which constituents eat its radicals, it can predict how an AOP will perform from routine water-quality data instead of a pilot study for every season. That is the bridge from this lab work to the <a href="{{root}}research/real-water/">real-water</a> chapter of my PhD.</p>
+    </div>
+  </div>
+</section>
+
+{{casenav}}
